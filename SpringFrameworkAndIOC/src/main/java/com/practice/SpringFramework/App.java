@@ -9,8 +9,7 @@ public class App
 {
     public static void main( String[] args )
     {
-        @SuppressWarnings("resource")
-		ApplicationContext context = new ClassPathXmlApplicationContext("bean.xml");
+        ApplicationContext context = new ClassPathXmlApplicationContext("bean.xml");
         
         SharingApp app = context.getBean("obj",SharingApp.class);
         app.share();
