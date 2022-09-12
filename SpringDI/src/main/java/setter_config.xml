@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans.xsd">
+           
+       <!-- DI using setters -->
+       <bean id="address" class="com.di.setterDI.Address">
+       		<property name="city" value="Kolhapur"></property>
+       		<property name="state" value="MAH"></property>
+       		<property name="zip" value="411008"></property>
+       </bean>
+       
+       
+       <bean id="emp" class="com.di.setterDI.Employee">
+       		<property name="id" value="101"></property>
+       		<property name="name" value="Hrushi"></property>
+       		<property name="address" ref="address"></property>
+       		<property name="phoneList">
+       			<list>
+       				<value>9998889990</value>
+       				<value>8889998890</value>
+       			</list>
+       		</property>
+       	</bean> 
+       
+</beans>
