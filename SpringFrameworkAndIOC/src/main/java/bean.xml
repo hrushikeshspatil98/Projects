@@ -5,7 +5,8 @@
            http://www.springframework.org/schema/beans/spring-beans.xsd">
 
   <bean id="obj" class="com.practice.SpringFramework.WhatsApp">
-    <!-- collaborators and configuration for this bean go here -->
+  <!-- <bean id="obj" class="com.practice.SpringFramework.Gmail"> -->
+        <!-- collaborators and configuration for this bean go here -->
   </bean>
 
 
