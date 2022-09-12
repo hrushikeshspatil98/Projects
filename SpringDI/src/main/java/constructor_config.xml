@@ -4,27 +4,6 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
            http://www.springframework.org/schema/beans/spring-beans.xsd">
            
-       <!-- DI using setters -->
-       <!-- <bean id="address" class="com.di.setterDI.Address">
-       		<property name="city" value="Kolhapur"></property>
-       		<property name="state" value="MAH"></property>
-       		<property name="zip" value="411008"></property>
-       </bean>
-       
-       
-       <bean id="emp" class="com.di.setterDI.Employee">
-       		<property name="id" value="101"></property>
-       		<property name="name" value="Hrushi"></property>
-       		<property name="address" ref="address"></property>
-       		<property name="phoneList">
-       			<list>
-       				<value>9998889990</value>
-       				<value>8889998890</value>
-       			</list>
-       		</property>
-       	</bean> -->
-       
-       
        <!-- DI using constructor -->
        <bean id="address" class="com.di.constructorDI.Address">
        		<constructor-arg value="Kolhapur"></constructor-arg>
@@ -43,5 +22,4 @@
        		</constructor-arg>
        </bean>
        
-
 </beans>
